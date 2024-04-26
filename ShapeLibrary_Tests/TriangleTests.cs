@@ -11,7 +11,7 @@ public class TriangleTests
 	[TestCase(4, 700, 5)]
 	[TestCase(0, 0, 0)]
 	[TestCase(-4, -4, -3)]
-	public void Create_NonExistentTriangle_ExistException(
+	public void Create_NonExistentTriangle_UnexistException(
 		double side1, double side2, double side3)
 	{
 		Assert.Throws<FigureUnexistException>(() => new Triangle(side1, side2, side3));
